@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="no1" />
+    <input type="text" id="no2" />
+    <button onclick="divide()">Divide</button>
+    <label id="result"></label>
+
+    <script>
+        function divide()
+        {
+            try{
+                var no1 = Number(document.getElementById("no11").value);
+                var no2 = Number(document.getElementById("no2").value);
+                var res = no1 / no2;
+                document.getElementById("result").innerHTML = "Divisions : " + res;
+            }
+            catch(err){
+                alert("Something went wrong.");
+            }
+        }
+    </script>
+</body>
+</html>

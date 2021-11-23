@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label id="fruits"></label>    
+    <button onclick="iterateArray()">Iterate</button>
+
+    <script>
+        function iterateArray()
+        {
+            var fruits = [{name: "Apple", color: "Red"},
+                            {name: "Mango", color: "Yellow"},
+                            {name: "Banana", color: "Yellow"}];
+
+            for(let i in fruits){
+                if(fruits[i].name == "Mango")
+                    continue;
+                    
+                document.getElementById("fruits").innerHTML += 
+                fruits[i].name + "-" + fruits[i].color + "<br />";
+
+                
+            }
+
+        }
+    </script>
+</body>
+</html>
