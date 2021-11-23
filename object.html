@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select onchange="" id="year"></select>
+    <select id="subject"></select>
+
+    <script>
+         let years = [{id: 1, name: "FY"},
+                        {id: 2, name: "SY"},
+                        {id: 3, name: "TY"}];
+        let str = "";
+        for(let i = 0; i < years.length; i++)
+        {
+            str += "<option value='" + years[i].id + "'>" + years[i].name + "</option>";
+        }
+        document.getElementById("year").innerHTML = str;
+        
+
+        
+        
+        let abhijit = {name: "Abhijit", mobile: "9561320192"};
+        let sakshi = {name: "Sakshi", mobile: "6767676768"};
+        let akshay = {name: "Akshay", mobile: "4545454545"};
+
+        console.log(abhijit.name);
+        console.log(sakshi.name);
+        console.log(akshay.name);
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="showmessage()">Alert</button>
+    <button onclick="confirmuser()">Confirm</button>
+    <button onclick="showdialog()">Ask Me</button>
+    <button onclick="myfunction()">Call My Function</button>
+    <script>
+        function showmessage()
+        {
+            alert("Hello this is Alert Box.");
+        }
+
+        function confirmuser()
+        {
+           if(confirm("Sure to delete?")){
+                alert(result);    
+           }           
+        }
+
+        function showdialog()
+        {
+            var name = prompt("Your name please");
+            alert(name);
+        }
+
+        var myfunction = function()
+        {
+            alert("Hello");
+        }
+
+       var myanotherfunction = ()=>{
+
+        }
+
+    </script>
+</body>
+</html>
